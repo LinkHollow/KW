@@ -1,4 +1,6 @@
-﻿
+﻿// Написать программу, которая из имеющегося массива строк формирует массив строк,
+// длина которых меньше либо равна 3 символа.
+
 System.Console.WriteLine("Введите первый эллемент массива: ");
 string firstEl = Console.ReadLine()!;
 System.Console.WriteLine("Введите второй эллемент массива: ");
@@ -6,10 +8,10 @@ string secondEl = Console.ReadLine()!;
 System.Console.WriteLine("Введите третий эллемент массива: ");
 string thirdEl = Console.ReadLine()!;
 string[] Array = CreateArray(firstEl, secondEl, thirdEl);
+System.Console.WriteLine("Введёный массив:");
 System.Console.WriteLine($"[{String.Join(" ", Array)}]");
-// System.Console.WriteLine($"[{String.Join(" ",  SortArray(Array))}]");
-string[] ArrayTwo = SortArray(Array);
-System.Console.WriteLine($"[{String.Join(" ", ArrayTwo)}]");
+System.Console.WriteLine("Отсортированный массив:");
+System.Console.WriteLine($"[{String.Join(" ",  SortArray(Array))}]");
 
 
 // ---------------------Method--------------------
